@@ -1,0 +1,646 @@
+.page {
+  min-height: 100vh;
+  background: #f5f5f5;
+}
+
+.statistics-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.page-header h1 {
+  color: #2c3e50;
+  margin: 0;
+}
+
+/* Общая статистика */
+.stats-overview {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+.main-progress {
+  margin-bottom: 25px;
+}
+
+.main-progress h2 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background: #f8f9fa;
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-card.total {
+  border-left: 4px solid #3498db;
+}
+
+.stat-card.completed {
+  border-left: 4px solid #27ae60;
+}
+
+.stat-card.in-progress {
+  border-left: 4px solid #f39c12;
+}
+
+.stat-card.not-started {
+  border-left: 4px solid #e74c3c;
+}
+
+.stat-number {
+  display: block;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.stat-label {
+  font-size: 1em;
+  color: #7f8c8d;
+  font-weight: 500;
+}
+
+/* Прогресс по категориям */
+.category-stats {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+.category-stats h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.category-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.category-card {
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 4px solid;
+  background: #f8f9fa;
+}
+
+.category-card.frontend {
+  border-left-color: #2196F3;
+}
+
+.category-card.backend {
+  border-left-color: #FF9800;
+}
+
+.category-card.other {
+  border-left-color: #9C27B0;
+}
+
+.category-card h3 {
+  margin: 0 0 15px 0;
+  color: #2c3e50;
+}
+
+.category-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.category-count {
+  font-weight: bold;
+  color: #34495e;
+}
+
+.category-details {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.detail-label {
+  color: #7f8c8d;
+}
+
+.detail-value {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* Последние достижения */
+.recent-activity {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+.recent-activity h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.activity-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.activity-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #27ae60;
+}
+
+.activity-tech {
+  display: flex;
+  flex-direction: column;
+}
+
+.tech-name {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.tech-category {
+  font-size: 0.9em;
+  color: #7f8c8d;
+  text-transform: capitalize;
+}
+
+.activity-status.completed {
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.no-activity {
+  text-align: center;
+  padding: 40px;
+  color: #7f8c8d;
+}
+
+.no-activity p {
+  margin-bottom: 20px;
+  font-size: 1.1em;
+}
+
+/* Дополнительная статистика */
+.additional-stats {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.additional-stats h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.additional-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.additional-card {
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #3498db;
+}
+
+.additional-card h4 {
+  margin: 0 0 15px 0;
+  color: #2c3e50;
+}
+
+.additional-content p {
+  margin: 8px 0;
+  color: #34495e;
+}
+
+/* Кнопки */
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background: #3498db;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #2980b9;
+}
+
+.btn-secondary {
+  background: #95a5a6;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: #7f8c8d;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .statistics-page {
+    padding: 15px;
+  }
+  
+  .page-header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .category-cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .activity-item {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+.statistics-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 100vh;
+  background: #f5f5f5;
+}
+
+.statistics-page .page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.statistics-page .page-header h1 {
+  color: #2c3e50;
+  margin: 0;
+}
+
+/* Общая статистика */
+.statistics-page .stats-overview {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+.statistics-page .main-progress {
+  margin-bottom: 25px;
+}
+
+.statistics-page .main-progress h2 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.statistics-page .stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.statistics-page .stat-card {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background: #f8f9fa;
+  transition: transform 0.3s ease;
+}
+
+.statistics-page .stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.statistics-page .stat-card.total {
+  border-left: 4px solid #3498db;
+}
+
+.statistics-page .stat-card.completed {
+  border-left: 4px solid #27ae60;
+}
+
+.statistics-page .stat-card.in-progress {
+  border-left: 4px solid #f39c12;
+}
+
+.statistics-page .stat-card.not-started {
+  border-left: 4px solid #e74c3c;
+}
+
+.statistics-page .stat-number {
+  display: block;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.statistics-page .stat-label {
+  font-size: 1em;
+  color: #7f8c8d;
+  font-weight: 500;
+}
+
+/* Прогресс по категориям */
+.statistics-page .category-stats {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+.statistics-page .category-stats h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.statistics-page .category-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.statistics-page .category-card {
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 4px solid;
+  background: #f8f9fa;
+}
+
+.statistics-page .category-card.frontend {
+  border-left-color: #2196F3;
+}
+
+.statistics-page .category-card.backend {
+  border-left-color: #FF9800;
+}
+
+.statistics-page .category-card.other {
+  border-left-color: #9C27B0;
+}
+
+.statistics-page .category-card h3 {
+  margin: 0 0 15px 0;
+  color: #2c3e50;
+}
+
+.statistics-page .category-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.statistics-page .category-count {
+  font-weight: bold;
+  color: #34495e;
+}
+
+.statistics-page .category-details {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.statistics-page .detail-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.statistics-page .detail-label {
+  color: #7f8c8d;
+}
+
+.statistics-page .detail-value {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* Последние достижения */
+.statistics-page .recent-activity {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+.statistics-page .recent-activity h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.statistics-page .activity-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.statistics-page .activity-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #27ae60;
+}
+
+.statistics-page .activity-tech {
+  display: flex;
+  flex-direction: column;
+}
+
+.statistics-page .tech-name {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.statistics-page .tech-category {
+  font-size: 0.9em;
+  color: #7f8c8d;
+  text-transform: capitalize;
+}
+
+.statistics-page .activity-status.completed {
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.statistics-page .no-activity {
+  text-align: center;
+  padding: 40px;
+  color: #7f8c8d;
+}
+
+.statistics-page .no-activity p {
+  margin-bottom: 20px;
+  font-size: 1.1em;
+}
+
+/* Дополнительная статистика */
+.statistics-page .additional-stats {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.statistics-page .additional-stats h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.statistics-page .additional-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.statistics-page .additional-card {
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #3498db;
+}
+
+.statistics-page .additional-card h4 {
+  margin: 0 0 15px 0;
+  color: #2c3e50;
+}
+
+.statistics-page .additional-content p {
+  margin: 8px 0;
+  color: #34495e;
+}
+
+/* Кнопки ТОЛЬКО для statistics-page */
+.statistics-page .btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.statistics-page .btn-primary {
+  background: #3498db;
+  color: white;
+}
+
+.statistics-page .btn-primary:hover {
+  background: #2980b9;
+}
+
+.statistics-page .btn-secondary {
+  background: #95a5a6;
+  color: white;
+}
+
+.statistics-page .btn-secondary:hover {
+  background: #7f8c8d;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .statistics-page {
+    padding: 15px;
+  }
+  
+  .statistics-page .page-header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .statistics-page .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .statistics-page .category-cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .statistics-page .activity-item {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,122 @@
+.technology-card {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border-left: 4px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: default;
+    position: relative;
+    overflow: hidden;
+}
+
+.technology-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.technology-card:active {
+    transform: scale(0.98); /* Легкое сжатие при клике */
+    transition: transform 0.1s ease;
+}
+
+.technology-card.completed {
+    border-left-color: #4caf50;
+    background-color: #f8fff8;
+}
+
+.technology-card.in-progress {
+    border-left-color: #ff9800;
+    background-color: #fffaf0;
+}
+
+.technology-card.not-started {
+    border-left-color: #f44336;
+    background-color: #fff5f5;
+}
+
+.technology-card.completed,
+.technology-card.in-progress,
+.technology-card.not-started {
+    transition: border-left-color 0.5s ease, 
+                background-color 0.5s ease, 
+                transform 0.3s ease, 
+                box-shadow 0.3s ease;
+}
+
+.tech-info h3 {
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.tech-info p {
+    margin: 0;
+    color: #666;
+    line-height: 1.5;
+}
+
+.tech-status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.status-icon {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+
+.technology-card:hover .status-icon {
+    transform: scale(1.1); /* Увеличение иконки при наведении */
+}
+
+.tech-status p {
+    margin: 0;
+    font-weight: 500;
+}
+
+.click-hint {
+    font-size: 0.8em;
+    color: #888;
+    font-style: italic;
+    display: block;
+    margin-top: 5px;
+}
+
+.tech-info, .tech-status {
+  cursor: pointer;
+}
+
+.tech-photo {
+  margin: 12px 0;
+  text-align: center;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #f8f9fa;
+}
+
+.tech-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #007bff;
+  transition: all 0.3s ease;
+}
+
+.technology-card:hover .tech-image {
+  border-color: #0056b3;
+  transform: scale(1.1);
+}
+
+.photo-hint {
+  font-size: 11px;
+  color: #666;
+  margin-top: 8px;
+  text-align: center;
+}

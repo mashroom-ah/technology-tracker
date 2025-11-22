@@ -1,0 +1,368 @@
+.App {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.main-content {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page {
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #545b62;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  color: black;
+}
+
+.btn-warning:hover {
+  background-color: #e0a800;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+.btn-tertiary {
+  background-color: #6f42c1;
+  color: white;
+}
+
+.btn-tertiary:hover {
+  background-color: #5a2d91;
+}
+
+.back-link {
+  color: #007bff;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+}
+
+.empty-state p {
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+/* Стили для главной страницы неавторизованных пользователей */
+.welcome-section {
+  text-align: center;
+  padding: 60px 20px 40px 20px; /* Увеличили верхний отступ до 60px */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-section h1 {
+  margin: 0 0 16px 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+}
+
+.welcome-section p {
+  margin: 0 0 30px 0;
+  font-size: 1.2rem;
+  opacity: 0.9;
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  line-height: 1.6;
+}
+
+.welcome-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.welcome-actions p {
+  margin: 0 0 20px 0;
+  font-size: 1.1rem;
+  text-align: center;
+  width: 100%;
+}
+
+.btn.large {
+  padding: 15px 30px;
+  font-size: 1.1rem;
+}
+
+.guest-promo {
+  background: #e3f2fd;
+  padding: 40px 30px;
+  border-radius: 12px;
+  border: 2px solid #2196f3;
+  text-align: center;
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.guest-promo h3 {
+  margin: 0 0 20px 0;
+  color: #1976d2;
+  text-align: center;
+  width: 100%;
+}
+
+.guest-promo p {
+  margin: 0 0 25px 0;
+  color: #1565c0;
+  font-size: 1.1rem;
+  text-align: center;
+  width: 100%;
+  max-width: 700px;
+}
+
+.guest-promo ul {
+  text-align: center;
+  margin: 0 0 30px 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  max-width: 500px;
+}
+
+.guest-promo li {
+  margin: 12px 0;
+  color: #0d47a1;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Стили для страницы технологий */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.page-header h1 {
+  margin: 0;
+  color: #333;
+  font-size: 2.2rem;
+}
+
+.filters-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.search-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 280px;
+}
+
+.search-box input {
+  padding: 12px 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.search-box input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 40px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  border: 2px dashed #dee2e6;
+  margin: 40px 0;
+}
+
+.empty-state p {
+  margin: 0 0 16px 0;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.empty-state p:last-child {
+  margin-bottom: 25px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .welcome-section {
+    padding: 50px 15px 30px 15px;
+  }
+  
+  .welcome-section h1 {
+    font-size: 2rem;
+  }
+  
+  .welcome-section p {
+    font-size: 1.1rem;
+  }
+  
+  .guest-promo {
+    padding: 30px 20px;
+    margin: 30px 0;
+  }
+  
+  .guest-promo ul {
+    text-align: left;
+    display: inline-block;
+  }
+
+  .page-header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .filters-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .search-box {
+    width: 100%;
+  }
+}
+
+.welcome-actions .btn-primary.large {
+  background-color: #c775eb !important;
+  color: white !important;
+}
+
+.welcome-actions .btn-primary.large:hover {
+  background-color:#b16fce !important;
+}
+
+/* Стили для состояний загрузки и ошибок */
+.loading-state {
+  text-align: center;
+  padding: 40px;
+}
+
+.loading-state .spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+  margin: 0 auto 20px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.error-state {
+  text-align: center;
+  padding: 40px;
+  background: #ffeaea;
+  border: 1px solid #ffcdd2;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.error-state h3 {
+  color: #d32f2f;
+  margin-bottom: 10px;
+}
+
+.search-results-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.btn.small {
+  padding: 5px 10px;
+  font-size: 12px;
+}

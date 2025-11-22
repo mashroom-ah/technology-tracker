@@ -1,0 +1,233 @@
+.settings-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 100vh;
+  background: #f5f5f5;
+}
+
+.settings-page .page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.settings-page .page-header h1 {
+  color: #2c3e50;
+  margin: 0;
+}
+
+.settings-page .settings-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.settings-page .settings-section {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.settings-page .settings-section h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Текущая статистика */
+.settings-page .current-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.settings-page .stat-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #3498db;
+}
+
+.settings-page .stat-label {
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+.settings-page .stat-value {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.settings-page .stat-value.completed {
+  color: #27ae60;
+}
+
+.settings-page .stat-value.in-progress {
+  color: #f39c12;
+}
+
+.settings-page .stat-value.not-started {
+  color: #e74c3c;
+}
+
+.settings-page .stat-value.progress {
+  color: #3498db;
+}
+
+/* Настройки */
+.settings-page .setting-item {
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.settings-page .setting-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.settings-page .setting-item h3 {
+  color: #2c3e50;
+  margin: 0 0 8px 0;
+  font-size: 1.1em;
+}
+
+.settings-page .setting-item p {
+  color: #7f8c8d;
+  margin: 0 0 15px 0;
+  font-size: 0.95em;
+  line-height: 1.4;
+}
+
+.settings-page .import-textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #e1e5e9;
+  border-radius: 6px;
+  font-family: monospace;
+  font-size: 14px;
+  resize: vertical;
+  margin-bottom: 10px;
+}
+
+.settings-page .import-textarea:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+/* Опасная зона */
+.settings-page .danger-zone {
+  border: 2px solid #e74c3c;
+  background: #fff5f5;
+}
+
+.settings-page .danger-zone h2 {
+  color: #e74c3c;
+  border-bottom-color: #e74c3c;
+}
+
+/* Информация о приложении */
+.settings-page .app-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+}
+
+.settings-page .info-item {
+  padding: 10px;
+  background: #f8f9fa;
+  border-radius: 6px;
+  color: #2c3e50;
+}
+
+/* Кнопки ТОЛЬКО для settings-page */
+.settings-page .btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.settings-page .btn-primary {
+  background: #3498db;
+  color: white;
+}
+
+.settings-page .btn-primary:hover {
+  background: #2980b9;
+}
+
+.settings-page .btn-secondary {
+  background: #6c757d;
+  color: white;
+}
+
+.settings-page .btn-secondary:hover {
+  background: #545b62;
+}
+
+.settings-page .btn-warning {
+  background: #f39c12;
+  color: white;
+}
+
+.settings-page .btn-warning:hover {
+  background: #e67e22;
+}
+
+.settings-page .btn-danger {
+  background: #e74c3c;
+  color: white;
+}
+
+.settings-page .btn-danger:hover {
+  background: #c0392b;
+}
+
+.settings-page .btn-outline {
+  background: transparent;
+  border: 1px solid #3498db;
+  color: #3498db;
+}
+
+.settings-page .btn-outline:hover {
+  background: #3498db;
+  color: white;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .settings-page {
+    padding: 15px;
+  }
+  
+  .settings-page .page-header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .settings-page .current-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .settings-page .app-info {
+    grid-template-columns: 1fr;
+  }
+}
